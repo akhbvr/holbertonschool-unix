@@ -1,0 +1,5 @@
+#!/bin/bash
+for f in *.html; do
+	[ -e "$f" ] || exit 0
+	cp -u "$f" ..
+done
